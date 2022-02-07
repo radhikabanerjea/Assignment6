@@ -23,7 +23,7 @@ public class Lists {
 		try {
 			//creating the display.
 			Display display = Display.getDefault();
-			//going to the area that makes the shell.
+			//going to the method that makes the shell and has the label with the options.
 			createContents(lists);
 			shlAllPossibleGuesses.open();
 			shlAllPossibleGuesses.layout();
@@ -49,7 +49,7 @@ public class Lists {
 		shlAllPossibleGuesses.setSize(320, 602);
 		shlAllPossibleGuesses.setText("All Possible Guesses");
 		
-		//dimeensions of the label that contains all the info of the guesses.
+		//dimensions of the label that contains all the info of the guesses.
 		Label lblList = new Label(shlAllPossibleGuesses, SWT.NONE);
 		lblList.setBounds(10, 10, 188, 523);
 		lblList.setText(lists);
